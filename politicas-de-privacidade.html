@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: "Montserrat", sans-serif;
+        }
+
+        .header {
+            background-color: #fff;
+            color: #219EBC;
+            padding: 20px;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .header i {
+            font-size: 24px;
+            cursor: pointer;
+            color: #219EBC;
+        }
+
+        .header h2 {
+            margin: 0;
+        }
+
+        .main-content {
+            margin-top: 80px;
+            padding: 20px;
+            height: calc(100vh - 100px);
+            overflow-y: auto;
+        }
+
+        .main-content h3 {
+            color: #219EBC;
+            margin-bottom: 20px;
+        }
+
+        .card {
+            display: flex;
+            margin-bottom: 20px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .card img {
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+        }
+
+        .card-content {
+            color: #219EBC;
+            padding: 20px;
+            flex: 1;
+        }
+
+        .card-content h3 {
+            margin-top: 0;
+            margin-bottom: 10px;
+        }
+
+        p {
+            color: #000000;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="header">
+        <a href="./cadastrar.php"><i class="fa-solid fa-chevron-left"></i></a>
+        <h2>Política de Privacidade</h2>
+    </div>
+
+    <div class="main-content">
+
+        <h3>O que coletamos?</h3>
+
+        <div class="card">
+            <img src="./img/seus-dados.png">
+            <div class="card-content">
+                <h3>Seus dados pessoais</h3>
+                <p>Informações de registro, como nome, data de nascimento e informações de contato.</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="./img/dados-da-crianca.png">
+            <div class="card-content">
+                <h3>Dados da criança</h3>
+                <p>Nome, gênero, idade, nível de suporte e dados de uso, como interações dentro do aplicativo e progresso do usuário.
+                </p>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="./img/info-do-aparelho.png">
+            <div class="card-content">
+                <h3>Informações do aparelho</h3>
+                <p>Informações de dispositivo, incluindo tipo de dispositivo, sistema operacional e identificadores únicos.</p>
+            </div>
+        </div>
+
+        <h3>Uso das Informações:</h3>
+
+        <div class="card">
+            <img src="./img/dados-seus.png" alt="Imagem 5">
+            <div class="card-content">
+                <h3>Seus dados pessoais</h3>
+                <p>Identificar nossos usuários de forma clara e precisa; enviar informações sobre o aplicativo e avisos.</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="./img/progresso-da-crianca.png" alt="Imagem 4">
+            <div class="card-content">
+                <h3>Dados da criança</h3>
+                <p>Personalização da experiência do usuário e adaptação do conteúdo às necessidades individuais das crianças.</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="./img/adaptar-aparelhos.png" alt="Imagem 6">
+            <div class="card-content">
+                <h3>Informações do aparelho</h3>
+                <p>Melhoria contínua do Mente Curiosa, através de análises e desenvolvimento de novos recursos.</p>
+            </div>
+        </div>
+
+        <h3>Seus deveres:</h3>
+
+        <div class="card">
+            <img src="./img/dispositivo.png" alt="Imagem 7">
+            <div class="card-content">
+                <h3>Direitos dos Pais e Responsáveis</h3>
+                <p>Os pais ou responsáveis têm o direito de revisar, atualizar ou solicitar a exclusão das informações das crianças a qualquer momento</p>
+            </div>
+        </div>
+        <div class="card">
+            <img src="./img/sua-conta.png" alt="Imagem 8">
+            <div class="card-content">
+                <h3>Sua conta</h3>
+                <p>Usar uma senha segura e única, e jamais compartilhar os dados de login com terceiros.</p>
+            </div>
+        </div>
+        <div class="card">
+            <img src="./img/consentimento.png" alt="Imagem 9">
+            <div class="card-content">
+                <h3>Consentimento</h3>
+                <p>O consentimento dos pais ou responsáveis é obtido antes da coleta e uso das informações das crianças, conformidade com as leis de proteção de dados aplicáveis.</p>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

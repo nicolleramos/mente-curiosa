@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif; 
+}
+
+.container {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;    
+}
+
+h1 {
+    color: #3FB9D7;
+}
+
+.crianca {
+    margin: 10px;
+}
+
+.crianca input {
+    border: none;
+    width: 240px;
+    height: 40px;
+    border-radius: 12px;
+    padding: 15px;
+    background-color: #EDEDEE;
+    color: #979797;
+    font-weight: 600;
+}
+
+.dta_nasc {
+    margin: 10px;
+}
+
+.dta_nasc input {
+    border: none;
+    width: 240px;
+    height: 40px;
+    border-radius: 12px;
+    padding: 15px;
+    background-color: #EDEDEE;
+    color: #979797;
+    font-weight: 600;
+}
+
+.genero {
+    margin-right: 45px;
+    margin-left: 45px;
+    margin-top: 13px;
+    margin-bottom: 13px;
+    display: flex;
+    justify-content: space-between;
+    font-weight: 500;
+    color: #3FB9D7;
+}
+
+.n-autismo label {
+    font-weight: 600;
+    color: #FFBD3E;
+}
+
+select {
+    background: #EDEDEE;
+    color: #979797;
+    border: none;
+    width: 240px;
+    height: 40px;
+    border-radius: 12px;
+    padding: 10px;
+    font-weight: 600;
+    margin: 5px;
+}
+
+input:focus {
+    outline-color: #A5C1DC;
+}
+
+input[type="submit"] {
+    width: 240px;
+    height: 40px;
+    cursor: pointer;
+    padding: 0px 20px;
+    border-radius: 10px;
+    border: none;
+    text-align: center;
+    background-color: #3FB9D7;
+    color: #FFF;
+    font-size: 17px;
+    font-weight: 500;
+    margin-top: 12px;
+}
+
+.box img {
+    border-radius: 50%;
+}

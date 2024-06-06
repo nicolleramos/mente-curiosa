@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif; 
+}
+
+.container {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;    
+}
+
+.box img {
+    border-radius: 80%;
+}
+
+.mensagem-err {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+h1 {
+    color: #3FB9D7;
+}
+
+.responsavel {
+    margin: 10px;
+}
+
+.responsavel input {
+    border: none;
+    width: 240px;
+    height: 40px;
+    border-radius: 12px;
+    padding: 15px;
+    background-color: #EDEDEE;
+    color: #979797;
+    font-weight: 600;
+}
+
+.responsavel {
+    margin: 10px;
+}
+
+.responsavel input {
+    border: none;
+    width: 240px;
+    height: 40px;
+    border-radius: 12px;
+    padding: 15px;
+    background-color: #EDEDEE;
+    color: #979797;
+    font-weight: 600;
+}
+
+.email {
+    margin: 10px;
+}
+
+.email input {
+    border: none;
+    width: 240px;
+    height: 40px;
+    border-radius: 12px;
+    padding: 15px;
+    background-color: #EDEDEE;
+    color: #979797;
+    font-weight: 600;
+}
+
+.senha {
+    margin: 10px;
+}
+
+.senha input {
+    border: none;
+    width: 240px;
+    height: 40px;
+    border-radius: 12px;
+    padding: 15px;
+    background-color: #EDEDEE;
+    color: #a2a2a2;
+    font-weight: 600;
+}
+
+.csenha {
+    margin: 10px;
+}
+
+.csenha input {
+    border: none;
+    width: 240px;
+    height: 40px;
+    border-radius: 12px;
+    padding: 15px;
+    background-color: #EDEDEE;
+    color: #979797;
+    font-weight: 600;
+}
+
+input:focus {
+    outline-color: #A5C1DC;
+}
+
+input[type="submit"] {
+    width: 240px;
+    height: 40px;
+    cursor: pointer;
+    padding: 0px 20px;
+    border-radius: 10px;
+    border: none;
+    text-align: center;
+    background-color: #3FB9D7;
+    color: #FFF;
+    font-size: 17px;
+    font-weight: 500;
+}
+
+.termos {
+    margin-left: 25px;
+    margin-right: 25px;
+}
+
+.login p {
+    margin: 13px;
+    font-size: 13px;
+    color: #222222;
+    font-weight: 500;
+}
