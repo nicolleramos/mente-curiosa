@@ -82,7 +82,7 @@ $data_nascimento = date('d/m/Y', $dta_nasc);
 
     <div class="e-nome">
         <ion-icon name="lock-closed"></ion-icon>
-        <h4>Mude a senha</h4>
+        <h4 id="editarsenha">Mude a senha</h4>
     </div>
     <br>
     <hr>
@@ -108,6 +108,10 @@ $data_nascimento = date('d/m/Y', $dta_nasc);
     <script nomodule src="https://cdn.jsdelivr.net/npm/ionicons@latest/dist/ionicons/ionicons.js"></script>
 
     <script>
+        document.getElementById("editarsenha").addEventListener("click", function() {
+            window.location.href = "./editar-senha.php";
+        });
+
         document.getElementById('deleteLink').addEventListener('click', function(event) {
             event.preventDefault();
 

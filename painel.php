@@ -43,7 +43,7 @@ if ($resultado && $resultado->num_rows > 0) {
             margin: 110px;
             margin-top: 130px;
             margin-bottom: 0px;
-            width: 220px;
+            width: 250px;
         }
 
         .card-trilha {
@@ -234,7 +234,6 @@ if ($resultado && $resultado->num_rows > 0) {
             background-position: center;
             background: #081B22;
         }
-        
     </style>
 </head>
 
@@ -258,7 +257,7 @@ if ($resultado && $resultado->num_rows > 0) {
     <div class="side-bar">
         <header>
             <div class="fechar-btn">
-                <i class="fa-solid fa-bars" style="color: #3FB9D7" ></i>
+                <i class="fa-solid fa-bars" style="color: #3FB9D7"></i>
             </div>
 
             <img src="./img/<?php echo $imagem; ?>" alt="PerfildaCriança">
@@ -288,11 +287,35 @@ if ($resultado && $resultado->num_rows > 0) {
 
     <div class="container-c">
         <div class="personagem">
-            <img src="./img/status (3).png" id="status">
+            <img src="./img/status (7).png" id="personagem">
         </div>
 
         <div class="trilhas">
             <p class="categoria">Trilhas para explorar!</p>
+        </div>
+    </div>
+
+    <div class="pegadas">
+        <div class="card-trilha">
+            <img src="./img/pe.png" width="320px" id="Atividade">
+        </div>
+    </div>
+
+    <div class="pegadas">
+        <div class="card-trilha">
+            <img src="./img/pe.png" width="320px" id="Atividade">
+        </div>
+    </div>
+
+    <div class="pegadas">
+        <div class="card-trilha">
+            <img src="./img/pe.png" width="320px" id="Atividade">
+        </div>
+    </div>
+
+    <div class="pegadas">
+        <div class="card-trilha">
+            <img src="./img/pe.png" width="320px" id="Atividade">
         </div>
     </div>
 
@@ -334,6 +357,20 @@ if ($resultado && $resultado->num_rows > 0) {
                 text.textContent = 'Escuro';
             }
         }
+
+        document.addEventListener('DOMContentLoaded', function() {
+
+            const estrelas = <?php echo $estrelas; ?>;
+
+            const personagemImg = document.getElementById('personagem');
+
+            if (estrelas >= 15) {
+                personagemImg.src = './img/status (8).png';
+            }
+            if (estrelas >= 25) {
+                personagemImg.src = './img/status (4).png';
+            }
+        });
     </script>
 
 </body>
