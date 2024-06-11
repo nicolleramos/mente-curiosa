@@ -12,7 +12,7 @@ if (isset($_SESSION['id_usuario'])) {
         $genero = mysqli_real_escape_string($conexao, $_POST['genero']);
         $nivel_autismo = mysqli_real_escape_string($conexao, $_POST['nivel_autismo']);
 
-        $update = mysqli_query($conexao, "UPDATE `usuario` SET crianca = '$crianca', data_nascimento = '$data_nascimento', genero = '$genero', nivel_autismo = '$nivel_autismo' WHERE id = $id_usuario") or die('query failed');
+        $update = mysqli_query($conexao, "UPDATE `usuario` SET crianca = '$crianca', data_nascimento = '$data_nascimento', genero = '$genero', nivel_autismo = '$nivel_autismo', foto_perfil = 'sem-foto.jpg' WHERE id = $id_usuario") or die('query failed');
 
         if ($update) {
             header('Location: ../index.php');

@@ -65,6 +65,10 @@ $data_nascimento = date('d/m/Y', $dta_nasc);
             text-decoration: none;
         }
 
+        body.dark-mode {
+            background-color: #081B22;
+        }
+
     </style>
 </head>
 
@@ -129,6 +133,12 @@ $data_nascimento = date('d/m/Y', $dta_nasc);
                     document.getElementById('deleteForm').submit();
                 }
             });
+        });
+
+        document.addEventListener('DOMContentLoaded', function() {
+            if (localStorage.getItem('theme') === 'dark') {
+                document.body.classList.add('dark-mode');
+            }
         });
     </script>
 

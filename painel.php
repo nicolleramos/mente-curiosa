@@ -2,6 +2,7 @@
 include './php/verifica_login.php';
 include './dados/conexao.php';
 
+//** trigger não funcionou */
 $query = "SELECT estrelas FROM estrelas WHERE id_usuario = " . $_SESSION['id'];
 $resultado = $conexao->query($query);
 if ($resultado && $resultado->num_rows > 0) {
@@ -342,6 +343,10 @@ if ($resultado && $resultado->num_rows > 0) {
             window.location.href = "./atividades1/screens/modulo-1.html";
         });
 
+        document.getElementById("personagem").addEventListener("click", function() {
+            window.location.href = "./status-personagens.php";
+        });
+
         function toggleDarkMode() {
             document.body.classList.toggle('dark-mode');
             var themeToggle = document.getElementById('theme-toggle');
@@ -351,14 +356,25 @@ if ($resultado && $resultado->num_rows > 0) {
                 icon.classList.remove('fa-moon');
                 icon.classList.add('fa-sun');
                 text.textContent = 'Claro';
+                localStorage.setItem('theme', 'dark');
             } else {
                 icon.classList.remove('fa-sun');
                 icon.classList.add('fa-moon');
                 text.textContent = 'Escuro';
+                localStorage.setItem('theme', 'light');
             }
         }
 
         document.addEventListener('DOMContentLoaded', function() {
+            if (localStorage.getItem('theme') === 'dark') {
+                document.body.classList.add('dark-mode');
+                var themeToggle = document.getElementById('theme-toggle');
+                var icon = themeToggle.querySelector('i');
+                var text = themeToggle.querySelector('b');
+                icon.classList.remove('fa-moon');
+                icon.classList.add('fa-sun');
+                text.textContent = 'Claro';
+            }
 
             const estrelas = <?php echo $estrelas; ?>;
 

@@ -44,6 +44,10 @@ include './php/verifica_login.php';
         hr {
             border: 1px solid #F8F8F8;
         }
+
+        body.dark-mode {
+            background-color: #081B22;
+        }
     </style>
 </head>
 
@@ -72,6 +76,13 @@ include './php/verifica_login.php';
 
     <script type="module" src="https://cdn.jsdelivr.net/npm/ionicons@latest/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://cdn.jsdelivr.net/npm/ionicons@latest/dist/ionicons/ionicons.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            if (localStorage.getItem('theme') === 'dark') {
+                document.body.classList.add('dark-mode');
+            }
+        });
+    </script>
 </body>
 
 </html>

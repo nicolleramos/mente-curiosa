@@ -88,11 +88,15 @@ $data_nascimento = date('d/m/Y', $dta_nasc);
         }
 
         .c-perfil {
-            background-color: #97D1DF;
+            background-color: #8475D6;
             display: flex;
             padding-right: 20px;
             border-radius: 20px;
             align-items: center;
+        }
+
+        body.dark-mode  .c-perfil {
+            background-color: #97D1DF;
         }
 
         .c-perfil i {
@@ -129,6 +133,44 @@ $data_nascimento = date('d/m/Y', $dta_nasc);
 
         input:focus {
             outline-color: #8475D6;
+        }
+
+        body.dark-mode {
+            background-color: #081B22;
+        }
+
+        body.dark-mode p {
+            color: #FFF;
+        }
+
+        body.dark-mode {
+            background-color: #081B22;
+        }
+
+        body.dark-mode p {
+            color: #FFF;
+        }
+
+        body.dark-mode .voltar,
+        body.dark-mode ion-icon,
+        body.dark-mode i,
+        body.dark-mode h2,
+        body.dark-mode h4,
+        body.dark-mode input {
+            color: #3FB9D7;
+        }
+
+        body.dark-mode input[type="submit"] {
+            background-color: #3FB9D7;
+            color: #FFF;
+        }
+
+        body.dark-mode input {
+            border-color: #3FB9D7;
+        }
+
+        body.dark-mode input:focus {
+            outline-color: #3FB9D7;
         }
     </style>
 </head>
@@ -182,6 +224,13 @@ $data_nascimento = date('d/m/Y', $dta_nasc);
 
     <script type="module" src="https://cdn.jsdelivr.net/npm/ionicons@latest/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://cdn.jsdelivr.net/npm/ionicons@latest/dist/ionicons/ionicons.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            if (localStorage.getItem('theme') === 'dark') {
+                document.body.classList.add('dark-mode');
+            }
+        });
+    </script>
 </body>
 
 </html>
